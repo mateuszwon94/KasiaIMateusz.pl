@@ -48,6 +48,7 @@
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="secret.key" />
+    <Content Include="templates\count.html" />
     <Content Include="templates\home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />

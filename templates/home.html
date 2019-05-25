@@ -6,8 +6,10 @@
     <title>HOME PAGE</title>
 </head>
 <body>
-    <p>Hello, world!</p><br />
-    <p>This is my home page</p>
-    <h1>{{ dupa }}</h1>
+    <h1>Moja główna strona!!!</h1>
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="5" name="FullText" ></textarea><br />
+        <input type="submit" value="Policz!" />
+    </form>
 </body>
 </html>
