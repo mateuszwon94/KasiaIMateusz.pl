@@ -42,11 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="KasiaIMateusz\" />
+    <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="secret.key" />
+    <Content Include="templates\home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
