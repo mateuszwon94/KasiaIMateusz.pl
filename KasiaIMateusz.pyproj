@@ -30,6 +30,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Blog\admin.py" />
+    <Compile Include="Blog\apps.py" />
+    <Compile Include="Blog\migrations\__init__.py" />
+    <Compile Include="Blog\models.py" />
+    <Compile Include="Blog\tests.py" />
+    <Compile Include="Blog\views.py" />
+    <Compile Include="Blog\__init__.py" />
+    <Compile Include="Jobs\admin.py" />
+    <Compile Include="Jobs\apps.py" />
+    <Compile Include="Jobs\migrations\__init__.py" />
+    <Compile Include="Jobs\models.py" />
+    <Compile Include="Jobs\tests.py" />
+    <Compile Include="Jobs\views.py" />
+    <Compile Include="Jobs\__init__.py" />
     <Compile Include="KasiaIMateusz\local_settings.py">
       <SubType>Code</SubType>
     </Compile>
@@ -40,7 +54,11 @@
     <Compile Include="KasiaIMateusz\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Blog\migrations\" />
+    <Folder Include="Jobs\migrations\" />
     <Folder Include="KasiaIMateusz\" />
+    <Folder Include="Blog\" />
+    <Folder Include="Jobs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
