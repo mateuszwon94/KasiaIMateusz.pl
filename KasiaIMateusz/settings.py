@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import posixpath
+from . import local_settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,9 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-with open(os.path.join(BASE_DIR, 'secret.key'), "r") as file:
-    SECRET_KEY = file.readline().strip()
+# SECURITY WARNING: keep the secret key used in production secret!s
+SECRET_KEY = local_settings.get_secret_key(BASE_DIR)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

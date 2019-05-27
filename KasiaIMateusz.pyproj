@@ -30,6 +30,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="KasiaIMateusz\local_settings.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="manage.py" />
     <Compile Include="KasiaIMateusz\__init__.py" />
     <Compile Include="KasiaIMateusz\settings.py" />

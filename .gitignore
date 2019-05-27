@@ -331,3 +331,10 @@ ASALocalRun/
 
 # Django secret key file
 secret.key
+local_settings.py
+
+# Django
+*.pot
+db.sqlite3
+/media
+/static
