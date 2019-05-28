@@ -56,11 +56,14 @@
   <ItemGroup>
     <Folder Include="Blog\migrations\" />
     <Folder Include="Jobs\migrations\" />
+    <Folder Include="Jobs\templates\" />
+    <Folder Include="Jobs\templates\Jobs\" />
     <Folder Include="KasiaIMateusz\" />
     <Folder Include="Blog\" />
     <Folder Include="Jobs\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Jobs\templates\Jobs\home.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="secret.key" />
