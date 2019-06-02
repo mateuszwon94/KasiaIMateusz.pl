@@ -341,3 +341,10 @@ local_settings.py
 db.sqlite3
 /media
 /static
+
+# Python Virtual Enviroment directories
+envs
+.pyenv
+.direnv
+.virtualenvs
+.venv
