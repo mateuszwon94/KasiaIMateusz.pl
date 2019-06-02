@@ -26,7 +26,7 @@ SECRET_KEY = local_settings.get_secret_key(BASE_DIR)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = local_settings.is_debug()
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = local_settings.allowed_hosts()
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -115,12 +115,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = local_settings.static_url()
+STATIC_ROOT = local_settings.static_root(BASE_DIR)
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'KasiaIMateusz/static'),
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = "/media/"
+MEDIA_URL = local_settings.media_url()
+MEDIA_ROOT = local_settings.media_root(BASE_DIR)
