@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import posixpath
+from urllib import request
+from O365 import Account, oauth_authentication_flow
 from . import local_settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -122,3 +124,11 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = local_settings.media_url()
 MEDIA_ROOT = local_settings.media_root(BASE_DIR)
+
+O365_ACCOUNT = Account((local_settings.app_id(), local_settings.get_onedrive_key(BASE_DIR)))
+if not O365_ACCOUNT.is_authenticated:
+    O365_ACCOUNT.authenticate(scopes=['basic', 'onedrive_all'])
+
+STORAGE = O365_ACCOUNT.storage()  # here we get the storage instance that handles all the storage options.
+
+DRIVE = STORAGE.get_default_drive()  # or get_drive('drive-id')
