@@ -33,6 +33,7 @@ ALLOWED_HOSTS = local_settings.allowed_hosts()
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
 INSTALLED_APPS = [
+    "Blog",
     # Add your apps here to enable them
     'django.contrib.admin',
     'django.contrib.auth',
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'KasiaIMateusz.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'KasiaIMateusz/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
