@@ -333,7 +333,7 @@ ASALocalRun/
 .mfractor/
 
 # Django secret key file
-secret.key
+*.key
 local_settings.py
 
 # Django

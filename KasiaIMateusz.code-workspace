@@ -190,7 +190,7 @@
       "**/*.binlog": true,
       "**/*.nvuser": true,
       "**/.mfractor/": true,
-      "**/secret.key": false,
+      "**/*.key": false,
       "**/local_settings.py": false,
       "**/*.pot": true,
       "**/db.sqlite3": false,
