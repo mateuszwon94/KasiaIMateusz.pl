@@ -335,6 +335,7 @@ ASALocalRun/
 # Django secret key file
 *.key
 local_settings.py
+o365_token.txt
 
 # Django
 *.pot
