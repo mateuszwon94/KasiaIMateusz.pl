@@ -11,18 +11,30 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row">
-
-      {% for blog in Blogs.all %}
       <div class="col-md-6">
         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <h3 class="mb-0">{{ blog.title }}</h3>
-            <div class="mb-1 text-muted">{{ blog.pub_date }}</div>
-            <p class="mb-auto">{{ blog.summary }}...</p>
-            <a href="{% url 'detail' blog.id %}" class="stretched-link">Continue reading</a>
+            <h3 class="mb-0">Lorem ipsum</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">bla bla bla...</p>
+            <a href="#" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
-            <img class="img-fluid" src="{{ blog.image.url }}" width="200" height="250" />
+            <img class="img-fluid" src="https://4ipp4a.am.files.1drv.com/y4m0juuY6_ZTMDubjXnPnDgjc4uha1HV8eoCdOdgxe7AofFMqf9qNg9xLg2UhDUv17ybU4zW_8fPzaSIpKIy5Kp-VHXYb4WEeMFWTw8jB6VRdSU8Yx-EHpKXrLY4btY7JB1VNUd0xEXknGU3lgznocpDiKxA67dqkALdLTtuDjQz8EIY81n1XAspYG7h_BuB-JTj4NZtDN1Y6ZZW9avqpn3Pw?cropmode=none" width="200" height="250" />
+          </div>
+        </div>
+      </div>
+      {% for image in images %}
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Lorem ipsum</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">bla bla bla...</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <IFRAME class="img-fluid" src="{{ image }}" width="200" height="250" />
           </div>
         </div>
       </div>
