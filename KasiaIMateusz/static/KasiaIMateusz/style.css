@@ -3,8 +3,18 @@
 @import url("https://fonts.googleapis.com/css?family=Alex+Brush&display=swap&subset=latin-ext");
 body {
   font-family: "Georgia";
-  background: #263127;
-  color: white;
+  background: #5cbb5c;
+  padding-top: 70px;
+}
+
+.home-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background-color: #333;
+  width: 100%;
+  margin-top: 200%;
 }
 
 span#logo {
@@ -14,9 +24,11 @@ span#logo {
 }
 
 .navbar {
+  margin-bottom: 0px;
   -webkit-box-shadow: 2px 2px 5px darkolivegreen;
           box-shadow: 2px 2px 5px darkolivegreen;
   background: darkolivegreen;
+  color: white;
 }
 
 .navbar .nav-item {
@@ -35,7 +47,8 @@ span#logo {
 }
 
 #sesjaNarzeczenska-header {
-  min-height: 250px;
+  min-height: 400px;
+  color: white;
 }
 
 #sesjaNarzeczenska-header .dark-overlay {
@@ -43,26 +56,26 @@ span#logo {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 250px;
+  min-height: 400px;
   background: rgba(0, 0, 0, 0.7);
 }
 
 #sesjaNarzeczenska-header .sesjaNarzeczenska-header-inner {
-  padding-top: 150px;
+  padding-top: 300px;
 }
 
 h1.display-2 {
-  font-size: 6.5rem;
+  font-size: 7.5rem;
   font-family: 'Alex Brush', cursive;
 }
 
 h1.display-3 {
-  font-size: 4.25rem;
+  font-size: 3.5rem;
   font-style: italic;
 }
 
 h2.display-4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
 }
 
@@ -131,23 +144,23 @@ h2.display-4 {
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 1199px) {
   h1.display-2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
   h1.display-3 {
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
   h2.display-4 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (max-width: 991px) {
   h1.display-2 {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   h1.display-3 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   h2.display-4 {
     font-size: 2rem;
@@ -157,26 +170,26 @@ h2.display-4 {
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 767px) {
   h1.display-2 {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
   h1.display-3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h2.display-4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 543px) {
   h1.display-2 {
-    font-size: 2.5rem;
+    font-size: 3.25rem;
   }
   h1.display-3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   h2.display-4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

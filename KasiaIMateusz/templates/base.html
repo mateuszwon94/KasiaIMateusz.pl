@@ -16,7 +16,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="main-nav">
+  <nav class="navbar navbar-default d-none" id="main-nav"></nav>
+  <nav class="navbar navbar-inverse fixed-top navbar-expand-md navbar-dark" id="main-nav">
     <div class="container">
       <a class="navbar-brand" href="{% url 'gallery' %}">
         <span id="logo">KasiaIMateusz.pl</span>
@@ -37,18 +38,16 @@
     </div>
   </nav>
 
-  <section id="home-header" class="p-5">
+  <header id="home-header pt-5">
     <div class="container pt-5">
-      <header>
-        <div class="text-center">
-          <h1 class="display-2">Kasia i Mateusz</h1>
-        </div>
-        <div class="text-center">
-          <h2 class="display-4">Chcesz z nami jeszcze raz przeżyć te chwile? Zapraszamy do obejrzenia naszej galerii!</h2>
-        </div>
-      </header>
+      <div class="text-center py-5">
+        <h1 class="display-2">Kasia i Mateusz</h1>
+      </div>
+      <div class="text-center py-3 pb-5 mb-1">
+        <h2 class="display-4">Chcesz z nami jeszcze raz przeżyć te chwile?<br />Zapraszamy do obejrzenia naszej galerii!</h2>
+      </div>
     </div>
-  </section>
+  </header>
 
   {% block content %}
 
