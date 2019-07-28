@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="sesjaNarzeczenska-header" class="p5">
+  <style>
+    #sesjaNarzeczenska-header {
+      background: url("{% static 'KasiaIMateusz/background.jpg' %}");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+  </style>
+  <div class="dark-overlay">
+    <div class="sesjaNarzeczenska-header-inner container">
+      <h1 class="display-3">Sesja narzeczeńska</h1>
+    </div>
+  </div>
+</section>
+
+<section id="sesjaNarzeczenska">
+  <div class="container py-5">
+    <div class="container gal-container">
+      <div class="row">
+
+        {% for shareId, layout in photos.items %}
+
+        <div class="{{ layout }} gal-item">
+          <div class="box">
+            <a href="https://api.onedrive.com/v1.0/shares/{{ shareId }}/root/content" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-content="ZOOM">
+              <img src="https://api.onedrive.com/v1.0/shares/{{ shareId }}/root/thumbnails/0/large/content" class="img-fluid rounded">
+            </a>
+            <i class="fas fa-search-plus fa-2x zoom-icon"></i>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
