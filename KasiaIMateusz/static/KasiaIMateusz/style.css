@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Alex+Brush&display=swap&subset=latin-ext");
 body {
   font-family: "Georgia";
-  background: #5cbb5c;
+  position: absolute;
+  width: 100%;
   padding-top: 70px;
 }
 
