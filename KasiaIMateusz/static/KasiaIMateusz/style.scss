@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Georgia:400,300);
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush&display=swap&subset=latin-ext');
 
 body {
   font-family: "Georgia";
@@ -9,10 +11,11 @@ body {
 span#logo {
   font-size: 1.5rem;
   font-weight: bold;
+  font-style: italic;
 }
 
 .navbar {
-  opacity: 0.8;
+  // opacity: 0.8;
   box-shadow: 2px 2px 5px darkolivegreen;
   background: darkolivegreen;
 
@@ -51,15 +54,17 @@ span#logo {
 }
 
 h1.display-2 {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
 }
 
 h1.display-3 {
   font-size: 4.25rem;
+  font-style: italic;
 }
 
 h2.display-4 {
   font-size: 3rem;
+  font-style: italic;
 }
 
 .gal-container {
@@ -121,16 +126,19 @@ h2.display-4 {
   }
 }
 
+.title {
+  font-family: 'Alex Brush', cursive;
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 543px) {
   h1.display-2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   h1.display-3 {
     font-size: 2rem;
   }
-
 
   h2.display-4 {
     font-size: 1.5rem;
@@ -140,7 +148,7 @@ h2.display-4 {
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 767px) {
   h1.display-2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   h1.display-3 {
@@ -155,7 +163,7 @@ h2.display-4 {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (max-width: 991px) {
   h1.display-2 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   h1.display-3 {
