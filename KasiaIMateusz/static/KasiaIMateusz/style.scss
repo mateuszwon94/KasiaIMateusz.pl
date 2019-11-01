@@ -202,6 +202,12 @@ h2.display-4 {
   h2.display-4 {
     font-size: 2rem;
   }
+
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 }
 
 /* Small devices (landscape phones, 544px and up) */
@@ -216,6 +222,12 @@ h2.display-4 {
 
   h2.display-4 {
     font-size: 1.25rem;
+  }
+
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 }
 
@@ -232,22 +244,10 @@ h2.display-4 {
   h2.display-4 {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 450px) {
   .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
-
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
   }
 }
