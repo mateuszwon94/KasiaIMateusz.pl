@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<section id="sesjaNarzeczenska-header" class="p5">
+<section id="sesjaNarzeczenska-header" class="p5 card-overlay">
   <style>
     #sesjaNarzeczenska-header {
       background: url("{% static 'KasiaIMateusz/background.jpg' %}");
@@ -11,13 +11,50 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      background-position-y: 3rem;
       position: relative;
     }
+
+    .gallery {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-width: 33%;
+      -moz-column-width: 33%;
+      column-width: 33%;
+    }
+
+    .gallery .pics {
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+    }
+
+    .gallery .animation {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    @media (max-width: 450px) {
+      .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+      }
+    }
   </style>
-  <div class="dark-overlay">
-    <div class="sesjaNarzeczenska-header-inner container">
-      <h1 class="display-3">Sesja narzeczeńska</h1>
-    </div>
+  <div class="sesjaNarzeczenska-header-inner container">
+    <h1 class="display-3">Sesja narzeczeńska</h1>
   </div>
 </section>
 
@@ -25,19 +62,20 @@
   <div class="container py-5">
     <div class="container gal-container">
       <div class="row">
+        <div class="gallery" id="gallery">
+          {% for fileName, layout in photos.items %}
 
-        {% for shareId, layout in photos.items %}
-
-        <div class="{{ layout }} gal-item">
-          <div class="box">
-            <a href="https://api.onedrive.com/v1.0/shares/{{ shareId }}/root/content" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-content="ZOOM">
-              <img src="https://api.onedrive.com/v1.0/shares/{{ shareId }}/root/thumbnails/0/large/content" class="img-fluid rounded">
-            </a>
-            <i class="fas fa-search-plus fa-2x zoom-icon"></i>
+          <div class="{{ layout }} gal-item">
+            <div class="box">
+              <a href="{% static 'Gallery/'|add:fileName %}" data-toggle="lightbox" data-gallery="gallery" data-type="image" data-content="ZOOM">
+                <img class="img-fluid rounded gal-img" src="{% static 'Gallery/'|add:fileName %}" alt="Card image cap">
+              </a>
+              <i class="fas fa-search-plus fa-2x zoom-icon"></i>
+            </div>
           </div>
-        </div>
 
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
