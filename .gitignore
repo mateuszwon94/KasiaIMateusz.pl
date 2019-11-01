@@ -345,7 +345,7 @@ db.sqlite3
 /public/media
 /public/static
 */media
-*/static
+*/static/**/*.jpg
 
 # Python Virtual Enviroment directories
 envs
